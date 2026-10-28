@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bhumika Sharma | BTech Student & Web Developer</title>
+<meta name="description" content="Portfolio of Bhumika Sharma, a BTech student who builds clean, fast and playful web projects.">
+<meta name="theme-color" content="#0B1020">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230B1020'/%3E%3Ctext x='50' y='68' font-size='56' text-anchor='middle' fill='%237C5CFF' font-family='sans-serif' font-weight='700'%3EB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bar" aria-hidden="true"></div>
+
+<header class="nav">
+  <a href="#top" class="logo">Bhumika<span>.</span></a>
+  <nav aria-label="Primary">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact" class="pill">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-copy">
+      <p class="hello">Hi, I’m</p>
+      <h1>Bhumika Sharma</h1>
+      <p class="lead">BTech student who turns ideas into fast, friendly web projects and enjoys the logic underneath them.</p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn ghost" href="mailto:sharmabhumika2311@gmail.com">Email me</a>
+      </div>
+    </div>
+    <a class="scroll-hint" href="#about" aria-label="Scroll to about"><span></span></a>
+  </section>
+
+  <section id="about" class="wrap two">
+    <div class="photo" data-reveal>
+      <img src="https://picsum.photos/seed/bhumika-portrait/640/760" width="640" height="760" loading="lazy" alt="Placeholder portrait">
+    </div>
+    <div>
+      <h2 data-reveal>About me</h2>
+      <p data-reveal>I’m a BTech student who likes understanding how things work and then making them better. I enjoy building interfaces that feel smooth, and I care about code that is easy to read and easy to change.</p>
+      <p data-reveal>Right now I’m sharpening my fundamentals in data structures and web development, and looking for internships where I can learn from a team and ship real work.</p>
+      <ul class="stats" data-reveal>
+        <li><b data-count="3">0</b><span>Featured projects</span></li>
+        <li><b data-count="7">0</b><span>Core skills</span></li>
+        <li><b data-count="100">0</b><span>% curious</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills" class="wrap">
+    <h2 data-reveal>Skills</h2>
+    <div class="chips">
+      <span data-reveal>JavaScript</span><span data-reveal>HTML & CSS</span><span data-reveal>Python</span>
+      <span data-reveal>C / C++</span><span data-reveal>Data Structures</span><span data-reveal>SQL</span><span data-reveal>Git & GitHub</span>
+    </div>
+  </section>
+
+  <section id="projects" class="wrap">
+    <h2 data-reveal>Projects</h2>
+    <div class="grid">
+      <article class="card" data-reveal>
+        <img src="https://picsum.photos/seed/bhumika-p1/800/520" width="800" height="520" loading="lazy" alt="Project preview">
+        <div class="body"><h3>Campus Notes Hub</h3><p>A shared space for class notes with search and tags, so revision starts in seconds.</p><small>HTML · CSS · JavaScript</small></div>
+      </article>
+      <article class="card" data-reveal>
+        <img src="https://picsum.photos/seed/bhumika-p2/800/520" width="800" height="520" loading="lazy" alt="Project preview">
+        <div class="body"><h3>Weather Pulse</h3><p>A clean forecast dashboard that shows the next few days at a glance.</p><small>JavaScript · REST API</small></div>
+      </article>
+      <article class="card" data-reveal>
+        <img src="https://picsum.photos/seed/bhumika-p3/800/520" width="800" height="520" loading="lazy" alt="Project preview">
+        <div class="body"><h3>Study Planner</h3><p>Plans a week of study blocks around deadlines and keeps track of what’s done.</p><small>Python · SQL</small></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="wrap contact">
+    <h2 data-reveal>Let’s build something</h2>
+    <p data-reveal>Open to internships, collaborations and good conversations.</p>
+    <div class="cta" data-reveal>
+      <a class="btn primary" href="mailto:sharmabhumika2311@gmail.com">sharmabhumika2311@gmail.com</a>
+      <a class="btn ghost" href="https://github.com/sharmabhumika2311-dev" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </section>
+</main>
+
+<footer><p>© <span id="yr"></span> Bhumika Sharma</p></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
